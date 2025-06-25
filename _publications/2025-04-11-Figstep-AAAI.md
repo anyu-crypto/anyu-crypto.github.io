@@ -5,7 +5,7 @@ category: recent
 permalink: /publication/2025-04-11-Figstep-AAAI
 excerpt: 'Extended version - https://arxiv.org/abs/2311.05608'
 date: 2025-04-11
-venue: 'AAAI 2025'
+venue: 'AAAI'
 paperurl: 'https://ojs.aaai.org/index.php/AAAI/article/download/34568/36723'
 citation: 'Y. Gong, D. Ran, J. Liu, C. Wang, T. Cong, A. Wang, S. Duan and X. Wang (2025). FigStep: Jailbreaking Large Vision-Language Models via Typographic Visual Prompts. Proceedings of the AAAI Conference on Artificial Intelligence, 39(22), 23951-23959. https://doi.org/10.1609/aaai.v39i22.34568'
 ---
