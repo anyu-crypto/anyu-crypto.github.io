@@ -3,6 +3,7 @@ title: "Figstep: Jailbreaking large vision-language models via typographic visua
 collection: publications
 category: recent
 permalink: /publication/2025-04-11-Figstep-AAAI
+excerpt: 
 date: 2025-04-11
 venue: 'AAAI 2025'
 paperurl: 'https://ojs.aaai.org/index.php/AAAI/article/download/34568/36723'
