@@ -3,7 +3,7 @@ title: "Faster BGV Bootstrapping for Power-of-Two Cyclotomics Through Homomorphi
 collection: publications
 category: recent
 permalink: /publication/2024-12-Faster-AC
-excerpt: 'Keywords - Fully Homomorphic Encryption, BGV, Bootstrapping, NTT'
+excerpt: 'Keywords - Fully Homomorphic Encryption; BGV; Bootstrapping, NTT'
 date: 2024-12-10
 venue: 'ASIACRYPT'
 paperurl: 'https://eprint.iacr.org/2024/164.pdf'

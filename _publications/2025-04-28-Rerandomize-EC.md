@@ -3,7 +3,7 @@ title: "Re-randomize and Extract: A Novel Commitment Construction Framework Base
 collection: publications
 category: recent
 permalink: /publication/2025-04-28-Rerandomize-EC
-excerpt:  'Keywords - Cryptographic group action, Dual-mode commitment, Homomorphic commitment, Lattice isomorphism problem'
+excerpt:  'Keywords - Cryptographic group action; Dual-mode commitment; Homomorphic commitment; Lattice isomorphism problem'
 date: 2025-04-28
 venue: 'EUROCRYPT'
 paperurl: 'https://eprint.iacr.org/2025/400.pdf'

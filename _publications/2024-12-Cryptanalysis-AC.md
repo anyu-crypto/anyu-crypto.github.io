@@ -3,7 +3,7 @@ title: "Cryptanalysis of rank-2 module-LIP with symplectic automorphisms"
 collection: publications
 category: recent
 permalink: /publication/2024-12-Cryptanalysis-AC
-excerpt: 'Keywords - Lattice automorphism, module-LIP, Symplectic matrix'
+excerpt: 'Keywords - Lattice automorphism; module-LIP; Symplectic matrix'
 date: 2024-12-10
 venue: 'ASIACRYPT'
 paperurl: 'https://eprint.iacr.org/2024/1173.pdf'
