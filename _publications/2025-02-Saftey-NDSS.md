@@ -3,7 +3,7 @@ title: "Safety misalignment against large language models"
 collection: publications
 category: recent
 permalink: /publication/2025-02-Saftey-NDSS
-date: 2025-02
+date: 2025-02-01
 venue: 'NDSS'
 paperurl: 'https://www.ndss-symposium.org/wp-content/uploads/2025-1089-paper.pdf'
 citation: 'Y. Gong, D. Ran, X. He, T. Cong, A. Wang, S. Duan and X. Wang (2025). Safety Misalignment Against Large Language Models. In Proceedings of the 2025 Annual Network and Distributed System Security Symposium (NDSS).'
