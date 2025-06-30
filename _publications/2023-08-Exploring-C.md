@@ -4,7 +4,7 @@ collection: publications
 category: other
 permalink: /publication/2023-08-Exploring-C
 excerpt:  'Keywords - Post-quantum cryptography; Code-based cryptography; Decryption failure; BIKE; QC-MDPC; Information set decoding'
-date: 2025-04-28
+date: 2023-08-28
 venue: 'CRYPTO'
 paperurl: 'https://eprint.iacr.org/2023/659.pdf'
 citation: 'T. Wang, A. Wang, X. Wang (2023). Exploring Decryption Failures of BIKE: New Class of Weak Keys and Key Recovery Attacks. In: Handschuh, H., Lysyanskaya, A. (eds) Advances in Cryptology – CRYPTO 2023. CRYPTO 2023. Lecture Notes in Computer Science, vol 14083. Springer, Cham. https://doi.org/10.1007/978-3-031-38548-3_3'

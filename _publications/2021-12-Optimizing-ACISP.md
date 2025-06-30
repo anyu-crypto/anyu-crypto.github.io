@@ -1,7 +1,7 @@
 ---
 title: "Optimizing Bootstrapping and Evaluating Large FHE Gates in the LWE-based GSW-FHE"
 collection: publications
-category: recent
+category: other
 permalink: /publication/2021-12-Optimizing-ACISP
 excerpt: 'Keywords - Fully homomorphic encryption; GSW-FHE; LWE-based; Large FHE gates'
 date: 2021-11-04
