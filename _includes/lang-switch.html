@@ -1,0 +1,23 @@
+{% comment %}
+  Language switch component.
+  Detects current page and shows the opposite language link.
+{% endcomment %}
+
+{% assign page_path = page.url | remove: "index.html" %}
+{% if page_path == "/chinese/" or page_path == "/chinese" %}
+  {% assign is_chinese = true %}
+{% else %}
+  {% assign is_chinese = false %}
+{% endif %}
+
+<li class="masthead__menu-item lang-switch">
+  <a href="{% if is_chinese %}{{ base_path }}/{% else %}{{ base_path }}/chinese/{% endif %}"
+     class="lang-switch__link"
+     title="{% if is_chinese %}Switch to English{% else %}切换到中文{% endif %}">
+    {% if is_chinese %}
+      <i class="fas fa-globe" aria-hidden="true"></i> English
+    {% else %}
+      <i class="fas fa-globe" aria-hidden="true"></i> 中文
+    {% endif %}
+  </a>
+</li>

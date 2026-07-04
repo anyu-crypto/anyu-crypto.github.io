@@ -25,7 +25,7 @@ author:
   avatar           : "anyuwang.png"
   name             : "Anyu Wang"
   pronouns         : # example: "she/her"  
-  bio              : "Cryptopraphy & Coding Theory"
+  bio              : "Research Scientist, PhD Advisor"
   location         : "Beijing, China"
   employer         : "Tsinghua University"
   uri              : # URL
@@ -81,9 +81,11 @@ publication_category:
   books:
     title: 'Books'
   recent:
-    title: 'Recent Papers'    
+    title: 'Recent (2025—)'    
+  preprint:
+    title: 'Preprints (ePrint / arXiv)'
   other:
-    title: 'Other Publications'
+    title: 'Earlier'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"

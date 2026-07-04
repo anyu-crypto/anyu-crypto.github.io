@@ -157,6 +157,13 @@
   }
 }
 
+.author__links-large {
+  a {
+    font-size: $type-size-4;
+    font-weight: 600;
+  }
+}
+
 .author__urls-wrapper {
   position: relative;
   display: table-cell;
