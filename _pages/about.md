@@ -11,11 +11,11 @@ redirect_from:
   .page__title { display: none; }
 </style>
 
-<div style="display:flex; align-items:flex-start; gap:30px; margin-top:30px; margin-bottom:2em; flex-wrap:wrap;">
+<div style="display:flex; align-items:flex-start; gap:30px; margin-bottom:2em; flex-wrap:wrap;">
   <div style="flex-shrink:0;">
     <img src="/images/anyuwang.png" alt="Anyu Wang" style="width:175px; border-radius:50%; border:1px solid var(--global-border-color); padding:5px;">
   </div>
-  <div style="flex:1; min-width:250px;">
+  <div style="flex:1; min-width:250px; margin-top:30px;">
     <p style="margin:0 0 2px 0; font-size:1.1em; color:var(--global-text-color);"><strong>Research Scientist, PhD Advisor</strong></p>
     <p style="margin:0 0 10px 0; font-size:1em;">
       <a href="https://www.ias.tsinghua.edu.cn/en/" target="_blank" style="text-decoration:none;color:inherit;font-weight:bold;">Institute for Advanced Study, Tsinghua University</a>
