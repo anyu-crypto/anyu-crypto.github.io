@@ -18,18 +18,33 @@
 
 .page {
   @include breakpoint($large) {
-    @include span(10 of 12 last);
-    @include prefix(0.5 of 12);
-    @include suffix(2 of 12);
+    @include span(10.5 of 12 last);
+  }
+}
+
+.page--full {
+  width: 100%;
+  float: none;
+  margin-left: 0;
+  margin-right: 0;
+
+  @include breakpoint($large) {
+    max-width: none;
   }
 
   .page__inner-wrap {
-    @include full();
+    width: 100%;
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
 
     .page__content,
     .page__meta,
     .page__share {
-      @include full();
+      width: 100%;
+      float: none;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 }
@@ -41,6 +56,17 @@
   & + .page__meta {
     margin-top: -0.5em;
   }
+}
+
+/* Hide duplicate name on home page where photo already shows name */
+/* Hide sidebar placeholder when author_profile is false */
+.page--full .sidebar {
+  display: none;
+}
+
+/* Hide duplicate name on home page where photo already shows name */
+.page--full .page__title {
+  display: none;
 }
 
 .page__lead {
@@ -398,4 +424,29 @@
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
+}
+
+
+/* Force full-width for .page--full pages */
+.page--full .page__content {
+  max-width: none !important;
+  width: auto !important;
+}
+
+.page--full .page__inner-wrap {
+  max-width: none !important;
+}
+
+.page--full + .sidebar {
+  display: none !important;
+}
+
+
+/* Full-width override for .page--full */
+.page--full {
+  max-width: none;
+}
+
+.page--full .page__inner-wrap {
+  max-width: none;
 }
