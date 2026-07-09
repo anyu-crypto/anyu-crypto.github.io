@@ -82,10 +82,10 @@ publication_category:
     title: 'Books'
   recent:
     title: 'Recent (2025—)'    
-  preprint:
-    title: 'Preprints (ePrint / arXiv)'
   other:
     title: 'Earlier'
+  preprint:
+    title: 'Preprints (ePrint / arXiv)'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"

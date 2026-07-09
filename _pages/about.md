@@ -9,6 +9,42 @@ redirect_from:
 
 <style>
   .page__title { display: none; }
+  .research-area h3 {
+    font-size: 1.15em;
+    font-weight: 700;
+    color: #1a4a70;
+    border-left: 4px solid #1a4a70;
+    padding-left: 0.75em;
+    margin: 1.8em 0 0.8em 0;
+  }
+  .research-area details.rep-details {
+    margin: 0.6em 0 0.8em 0;
+  }
+  .research-area details.rep-details summary {
+    cursor: pointer;
+    font-size: 0.85em;
+    font-weight: 500;
+    color: #666;
+    padding: 0.15em 0.6em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .research-area details.rep-details summary:hover {
+    color: #2c6b9e;
+    border-color: #2c6b9e;
+  }
+  .research-area details.rep-details[open] summary {
+    margin-bottom: 0.6em;
+    color: #2c6b9e;
+    border-color: #2c6b9e;
+    background: #f0f6fc;
+  }
+  .research-area details.rep-details .pub-item {
+    font-size: 0.87em;
+    line-height: 1.55;
+    padding: 0.3em 0;
+  }
 </style>
 
 <div style="display:flex; align-items:flex-start; gap:30px; margin-bottom:2em; flex-wrap:wrap;">
@@ -30,39 +66,77 @@ redirect_from:
 
 ## Short Bio
 
-Dr. Anyu Wang is a Researcher at the Institute for Advanced Study, Tsinghua University. He is also affiliated with Zhongguancun Laboratory. He received his Ph.D. in Mathematics from the Academy of Mathematics and Systems Science, Chinese Academy of Sciences in 2015 (Advisor: Prof. Zhe-Xian Wan and Prof. Zhifang Zhang). He got his bachelor's degree from the Shiing-Shen Chern Class at Nankai University. Prior to joining Tsinghua University in 2019, he was an Assistant Professor at the Institute of Information Engineering, Chinese Academy of Sciences from 2015 to 2019. Dr. Wang's research interests include cryptographic theory, coding theory, and the mathematical foundations of cryptography.
+I am a Researcher at the Institute for Advanced Study, Tsinghua University, and also affiliated with Zhongguancun Laboratory. I received my Ph.D. in Mathematics from the Academy of Mathematics and Systems Science, Chinese Academy of Sciences in 2015, under the supervision of Prof. Zhe-Xian Wan and Prof. Zhifang Zhang, and my bachelor's degree from the Shiing-Shen Chern Class at Nankai University. Prior to joining Tsinghua University in 2019, I was an Assistant Professor at the Institute of Information Engineering, Chinese Academy of Sciences from 2015 to 2019.
 
 ## Research Interests
 
-I work on **cryptographic theory and mathematical foundations of cryptography** — building the mathematical frameworks and algorithmic tools that underpin modern and post-quantum cryptosystems.
+<div class="research-area" markdown="1">
+
+My research centers on the mathematical foundations of cryptography — developing the frameworks and algorithmic tools that underpin both classical and post-quantum cryptosystems.
 
 ### Mathematical Problems in Cryptography
-Hardness analysis and algorithmic design for lattice problems and coding-theoretic problems, including the lattice isomorphism problem, regular syndrome decoding, and their applications to post-quantum cryptography.
+
+At the heart of every cryptosystem lies a computational assumption — a mathematical problem believed to be intractable. My work investigates the hardness assumptions that underpin lattice-based and code-based cryptography, with an emphasis on understanding their intrinsic structure, complexity, and interconnections.
+
+<details class="rep-details">
+<summary>Representative works</summary>
+
+<p class="pub-item">- Kaijie Jiang, <strong>Anyu Wang</strong>, Hengyi Luo, Guoxiao Liu, Yang Yu, Xiaoyun Wang: <a href="https://eprint.iacr.org/2023/1735">"Exploiting the Symmetry of Z^n: Randomization and the Automorphism Problem"</a>. ASIACRYPT 2023 (<strong>Best Paper Award</strong>).</p>
+<p class="pub-item">- Tianrui Wang, <strong>Anyu Wang</strong>, Kang Yang, Hanlin Liu, Yu Yu, Jun Zhang, Xiaoyun Wang: <a href="https://eprint.iacr.org/2025/1284">"A Hybrid Algorithm for the Regular Syndrome Decoding Problem"</a>. ASIACRYPT 2025.</p>
+
+</details>
 
 ### Fully Homomorphic Encryption
-Design and optimization of FHE bootstrapping algorithms, including BGV bootstrapping (151× throughput improvement, bringing bootstrap time from 12 hours to under 30 seconds), universal functional bootstrapping, and strong-security CKKS bootstrapping via subring key encapsulation.
 
-### Public-Key Cryptography: Design and Analysis
-Design of post-quantum public-key schemes based on standard lattice hard problems (e.g., the Scloud KEM, selected by Huawei for international standardization), and theoretical cryptanalysis of code-based candidates such as BIKE (whose IND-CCA2 security was shown broken, leading to its elimination from the NIST PQC competition).
+Fully Homomorphic Encryption (FHE) enables arbitrary computation on encrypted data, but its practical deployment has long been hindered by performance bottlenecks — most notably the bootstrapping procedure, which refreshes ciphertext noise at a high computational cost. This area of my research focuses on designing and optimizing bootstrapping algorithms and homomorphic computation techniques to bridge the gap between theoretical feasibility and practical efficiency.
+
+<details class="rep-details">
+<summary>Representative works</summary>
+
+<p class="pub-item">- Shihe Ma, Tairong Huang, <strong>Anyu Wang</strong>, Xiaoyun Wang: <a href="https://eprint.iacr.org/2024/115">"Accelerating BGV Bootstrapping for Large p Using Null Polynomials over Z_{p^e}"</a>. EUROCRYPT 2024.</p>
+<p class="pub-item">- Shihe Ma, Tairong Huang, <strong>Anyu Wang</strong>, Xiaoyun Wang: <a href="https://eprint.iacr.org/2024/164">"Faster BGV Bootstrapping for Power-of-Two Cyclotomics Through Homomorphic NTT"</a>. ASIACRYPT 2024.</p>
+
+</details>
+
+### Cryptographic Design and Analysis
+
+This direction covers both the design and analysis aspects of post-quantum cryptography. On the design front, my work develops efficient public-key schemes built upon well-studied hard problems and explores new cryptographic frameworks based on diverse mathematical assumptions. On the analysis front, I conduct theoretical cryptanalysis of proposed schemes to stress-test their security guarantees.
+
+<details class="rep-details">
+<summary>Representative works</summary>
+
+<p class="pub-item">- <strong>Anyu Wang</strong>, Zhongxiang Zheng, Chunhuan Zhao, Zhiyuan Qiu, Guang Zeng, Ye Yuan, Changchun Mu, Xiaoyun Wang: <a href="https://link.springer.com/chapter/10.1007/978-3-031-87541-0_7">"Scloud+: An Efficient LWE-Based KEM Without Ring/Module Structure"</a>. SSR 2024.</p>
+<p class="pub-item">- Kaijie Jiang, <strong>Anyu Wang</strong>, Hengyi Luo, Guoxiao Liu, Gang Tang, Yanbin Pan, Xiaoyun Wang: <a href="https://eprint.iacr.org/2025/400">"Re-randomize and Extract: A Novel Commitment Construction Framework Based on Group Actions"</a>. EUROCRYPT 2025.</p>
+<p class="pub-item">- T. Wang, <strong>Anyu Wang</strong>, X. Wang: <a href="https://eprint.iacr.org/2023/659">"Exploring Decryption Failures of BIKE: New Class of Weak Keys and Key Recovery Attacks"</a>. CRYPTO 2023.</p>
+
+</details>
 
 ### AI Security
-Coming soon.
 
-## Services and Awards
+The rapid proliferation of large language models and AI systems has introduced new security challenges that demand rigorous technical solutions. My work in this area applies cryptographic thinking and formal analysis methodologies to security and safety problems in AI.
+
+<details class="rep-details">
+<summary>Representative works</summary>
+
+<p class="pub-item">- Yichen Gong, Delong Ran, Xinlei He, Tianshuo Cong, <strong>Anyu Wang</strong>, Xiaoyun Wang: "Safety Misalignment Against Large Language Models." NDSS 2025.</p>
+<p class="pub-item">- Tianrui Wang, <strong>Anyu Wang</strong>, Tianshuo Cong, Delong Ran, Jinyuan Liu, Xiaoyun Wang: <a href="https://eprint.iacr.org/2025/2283">"Cryptanalysis of LDPC-Based Pseudorandom Error-Correcting Codes"</a>. arXiv preprint, 2025.</p>
+
+</details>
+
+In addition to the directions above, my broader interests also encompass topics such as secure implementation of cryptographic primitives, secure multiparty computation, and other areas where cryptographic theory meets real-world security needs.
+
+</div>
+
+## Awards and Services
 
 ### Awards
 - **Best Paper Award**, ASIACRYPT 2023
+- **Best Paper Award**, CCS-LAMPS 2024
 
 ### Academic Services
 - PC Member, ASIACRYPT 2026
+- PC Member, CSCML 2026
 - PC Member, Inscrypt 2021, 2024, 2025, 2026
-- Council Member, Chinese Association for Cryptologic Research (中国密码学会理事)
-- Member of Youth Working Committee, Chinese Association for Cryptologic Research (2021.04–present)
-- Member of the Professional Committee on Coding, Cryptography and Related Combinatorial Theory, China Society for Industrial and Applied Mathematics (中国工业与应用数学学会编码密码与相关组合理论专业委员会委员)
-- Member of the Professional Committee on Information and Communication Security and Mathematical Theory, China Institute of Communications (中国通信学会信息通信及安全数学理论专业委员会委员)
-
-### Recruitment
-I am looking for self-motivated **Ph.D. students** and **postdoctoral researchers** to work on cryptography and related areas. If you are interested, please feel free to contact me via email.
+- Board Member, Chinese Association for Cryptologic Research
 
 ---
-[**中文版** →](/chinese/) *查看中文个人简介*
