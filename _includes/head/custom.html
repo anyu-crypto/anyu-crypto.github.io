@@ -17,14 +17,15 @@
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-<!-- Fix sidebar overlap: use flexbox instead of float -->
+<!-- Fix sidebar overlap: use CSS grid for main layout -->
 <style>
-@media (min-width: 57.8125em) {
-  #main { display: flex !important; flex-wrap: wrap; }
-  #main > .sidebar { flex: 0 0 200px; max-width: 200px; float: none !important; }
-  #main > .archive, #main > article.page { flex: 1 1 auto; min-width: 0; float: none !important; width: auto !important; }
-  #main > .archive { margin-bottom: 0; }
+#main {
+  display: grid !important;
+  grid-template-columns: 200px 1fr !important;
+  gap: 40px !important;
 }
+#main > .sidebar { grid-column: 1 !important; }
+#main > .archive, #main > article.page { grid-column: 2 !important; }
 </style>
 
 <!-- end custom head snippets -->
